@@ -101,9 +101,9 @@ To make the kill switch start automatically after system reboot, follow these st
 1. Copy the script to a permanent location:
 
 ```bash
-sudo cp killswitch.sh /usr/local/sbin/killswitch.sh
+sudo cp killswitch.sh /usr/local/bin/killswitch.sh
 
-sudo chmod +x /usr/local/sbin/killswitch.sh
+sudo chmod +x /usr/local/bin/killswitch.sh
 ```
 
 2. Create a launch daemon configuration:
@@ -124,7 +124,7 @@ cat << 'EOF' | sudo tee /Library/LaunchDaemons/com.wireguard.killswitch.plist
     <string>com.wireguard.killswitch</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/local/sbin/killswitch.sh</string>
+        <string>/usr/local/bin/killswitch.sh</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
