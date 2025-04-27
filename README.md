@@ -1,6 +1,6 @@
 # WireGuard Kill Switch for macOS
 
-A bash script that creates a kill switch for WireGuard VPN on macOS using PF (Packet Filter). It ensures that your internet traffic only flows through the VPN, preventing any leaks if the VPN connection drops
+A bash script that creates a kill switch for WireGuard VPN on macOS using PF (Packet Filter). It ensures that your internet traffic only flows through the VPN, preventing any leaks if the VPN connection drops. Make sure your VPN uses MTU 1280
 
 ## Features
 
