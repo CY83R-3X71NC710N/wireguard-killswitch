@@ -182,6 +182,9 @@ tail -f /var/log/killswitch.log
 tail -f /var/log/killswitch.error.log
 ```
 
+# Cleanup
+The `cleanup` function in `killswitch.sh` uses `sudo pfctl -F all` and `sudo pfctl -d` to flush and disable the Packet Filter (PF) rules.
+
 ### Common Issues
 
 1. **Script doesn't start automatically**
