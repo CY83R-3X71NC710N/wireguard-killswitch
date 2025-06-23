@@ -88,6 +88,8 @@ utun1: flags=8031<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 2000
 utun3: flags=8031<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 1690  <- This is your WireGuard interface
 ```
 
+Set ListenPort=51820 in wireguard settings
+
 5. Update the VPN_INTERFACE variable in the script or set it via environment variable:
 
 ```bash
